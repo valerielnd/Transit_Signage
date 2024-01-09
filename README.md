@@ -1,6 +1,6 @@
 # Transit_Signage
 
-<img src="Project-Pictures/weste.png" width=70%>
+<img src="Project_Images/GS.png" width=70%>
 
 A Digital Signage System Leveraging London [LTC Transit Data](https://www.londontransit.ca/open-data/)
 
@@ -46,9 +46,9 @@ transit information, including bus tracking, accessibility options, and addition
 
 ## Run the application
 1. To directly run the application, please ensure that all the libraries are properly installed on a Linux System. Our tests we run a Ubuntu 22.04.
-   For assistance for their installation, you can use this [guide]()
+   For assistance for their installation, you can use this [guide](https://github.com/valerielnd/Transit_Signage/blob/main/Project_Signage/Library_Installation.txt)
 
-2. Use the makefile in the folder to run and compile the project:
+2. Use the makefile in the [SignageSystem folder](https://github.com/valerielnd/Transit_Signage/tree/main/Project_Signage/signageSystem) to run and compile the project:
    
    ```
    make
@@ -60,16 +60,12 @@ transit information, including bus tracking, accessibility options, and addition
    - On another computer : http://*IP*:9091/natsci
 
 
-## Some pages from the application
+## Images of the Signage
 
-### Application Login Page
-<img src="Project-Pictures/login.png" width=70%>
+<img src="Project_Images/Im1.png" width=70%>
 
-### Application signup page
-<img src="Project-Pictures/signup.png" width=70%>
+<img src="Project_Images/Im2.png" width=70%>
 
-### Application main page
-<img src="Project-Pictures/main.png" width=100%>
 
  
 
