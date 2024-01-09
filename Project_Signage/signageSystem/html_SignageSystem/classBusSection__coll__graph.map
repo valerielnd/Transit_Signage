@@ -1,0 +1,6 @@
+<map id="BusSection" name="BusSection">
+<area shape="rect" id="node1" title="This class is used to display the bus schedule and bus map on the signage." alt="" coords="35,171,129,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,5,154,32"/>
+<area shape="rect" id="node3" href="$classBusMapSection.html" title="This class is used to display the map with the current buses postion on the signage." alt="" coords="21,81,143,108"/>
+<area shape="rect" id="node4" href="$classBusScheduleSection.html" title="This class is used to display the bus schedule on the signage." alt="" coords="168,81,321,108"/>
+</map>

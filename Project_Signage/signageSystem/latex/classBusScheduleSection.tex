@@ -1,0 +1,313 @@
+\hypertarget{classBusScheduleSection}{}\doxysection{Bus\+Schedule\+Section Class Reference}
+\label{classBusScheduleSection}\index{BusScheduleSection@{BusScheduleSection}}
+
+
+This class is used to display the bus schedule on the signage.  
+
+
+
+
+{\ttfamily \#include $<$Bus\+Schedule\+Section.\+h$>$}
+
+
+
+Inheritance diagram for Bus\+Schedule\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classBusScheduleSection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+Schedule\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classBusScheduleSection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusScheduleSection_a4c79960cb8902ed3ca2e8898cc19d086}{Bus\+Schedule\+Section}} (Bus\+Stop \&stop, Wt\+::\+W\+Date\+Time $\ast$date\+Time, std\+::map$<$ int, Service $>$ \&services)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusScheduleSection_a1a7f556863f486f5b640cae3d9003ed3}{$\sim$\+Bus\+Schedule\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBusScheduleSection_a243ee6b31f6531c8870d9e8a9fd6cb7e}\label{classBusScheduleSection_a243ee6b31f6531c8870d9e8a9fd6cb7e}} 
+void {\bfseries create\+Schedule\+Section} ()
+\item 
+void \mbox{\hyperlink{classBusScheduleSection_a7cb82280cf0a847cd29e8ab1bf31f866}{set\+Date\+Time}} (Wt\+::\+W\+Date\+Time $\ast$date\+Time)
+\begin{DoxyCompactList}\small\item\em This method sets the datetime used by this section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusScheduleSection_a7c8bb58b216945fe475c45b20910c01f}{create\+Displayed\+Bus}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to divide the buses to show in groups of 5. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusScheduleSection_afe8d3e076fb94adaa789e94666cd0263}{create\+Schedule\+To\+Show}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the schedule to show on the web page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusScheduleSection_a76f05dfa6449474119419d706fd595cb}{display\+Schedule}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to display the schedule on the web page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusScheduleSection_a4d14f02987bb77f63b7414b91eac4df9}{display\+L\+T\+C\+Alerts}} ()
+\begin{DoxyCompactList}\small\item\em This function displays the alerts for the bus stop. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBusScheduleSection_a949d18bc568051b87bacad1acc4baa60}{compare\+Time}} (const Wt\+::\+W\+Time \&t1, const Wt\+::\+W\+Time \&t2)
+\begin{DoxyCompactList}\small\item\em This function compares two wtime objects. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ int, Wt\+::\+W\+Time $>$ $>$ \mbox{\hyperlink{classBusScheduleSection_a7c7b99195656841fbcb1992d024ddfd0}{sort\+Schedule}} (std\+::map$<$ int, Wt\+::\+W\+Time $>$ schedule)
+\begin{DoxyCompactList}\small\item\em This function sorts the schedule. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBusScheduleSection_ade82f01459495bf72af4b7a9b0ef54db}{get\+Number\+Of\+Bus}} (int first, int last)
+\begin{DoxyCompactList}\small\item\em This function returns the number of buses for which the schedule will be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusScheduleSection_a37cfa46d045951a1da01efae9549951e}{set\+Info\+Label}} (bool is\+Real\+Time)
+\begin{DoxyCompactList}\small\item\em This function sets the message info about the schedules that are displayed. \end{DoxyCompactList}\item 
+std\+::vector$<$ Bus $>$ \mbox{\hyperlink{classBusScheduleSection_aec76204139c2151a07ad8c153bfb3149}{get\+Bus\+Shown}} ()
+\begin{DoxyCompactList}\small\item\em This function sets the get the list of bus for which the schedule is displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusScheduleSection_ac7a1f371b9c71fe8ca315274c676e511}{set\+Alerts}} (std\+::vector$<$ L\+T\+C\+Alert $>$ alerts)
+\begin{DoxyCompactList}\small\item\em This function sets the alerts to display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a9a54e5db67eca2aeca38d2af6748410c}\label{classBusScheduleSection_a9a54e5db67eca2aeca38d2af6748410c}} 
+const int {\bfseries M\+A\+X\+\_\+\+B\+US} = 3
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a6c745e11d9cde6c65fad495666c63e8d}\label{classBusScheduleSection_a6c745e11d9cde6c65fad495666c63e8d}} 
+Wt\+::\+W\+Table $\ast$ {\bfseries bus\+Schedule\+Table}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a6166fdbc338a7343885be885738af112}\label{classBusScheduleSection_a6166fdbc338a7343885be885738af112}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries info\+Ctn}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a93a78b52791b3b514722921d6e461c89}\label{classBusScheduleSection_a93a78b52791b3b514722921d6e461c89}} 
+Bus\+Stop {\bfseries b\+Stop}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_ae6ebf94c34482d2370444166b8da87d6}\label{classBusScheduleSection_ae6ebf94c34482d2370444166b8da87d6}} 
+Wt\+::\+W\+Date\+Time $\ast$ {\bfseries bus\+Date\+Time}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a363853f4345857559c546d7d4d0946aa}\label{classBusScheduleSection_a363853f4345857559c546d7d4d0946aa}} 
+Wt\+::\+W\+Label $\ast$ {\bfseries info\+Label}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_ae50c51adcf6ea1f83666d1bbd7104e29}\label{classBusScheduleSection_ae50c51adcf6ea1f83666d1bbd7104e29}} 
+std\+::vector$<$ std\+::map$<$ int, int $>$ $>$ {\bfseries displayed\+Bus}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a1cfea930c4e1058888dfb866e639b54c}\label{classBusScheduleSection_a1cfea930c4e1058888dfb866e639b54c}} 
+int {\bfseries buses\+Group}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a5055e6fed2f16af015d47d872ad10e9c}\label{classBusScheduleSection_a5055e6fed2f16af015d47d872ad10e9c}} 
+int {\bfseries group\+Showed}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a66aaf895d9c5cf88c0c9c2f16e6eb49e}\label{classBusScheduleSection_a66aaf895d9c5cf88c0c9c2f16e6eb49e}} 
+std\+::vector$<$ Bus $>$ {\bfseries buses\+Shown}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_aa4a8f6fe3f5146bd4c27b0c7d781e26b}\label{classBusScheduleSection_aa4a8f6fe3f5146bd4c27b0c7d781e26b}} 
+std\+::map$<$ int, Service $>$ \& {\bfseries trips\+Services}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a5fe700d33cde1e38b8d5693bf5a23a82}\label{classBusScheduleSection_a5fe700d33cde1e38b8d5693bf5a23a82}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries bus\+Schedule\+Ctn}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a6185170cbabc5fb9b01643c1abffbe33}\label{classBusScheduleSection_a6185170cbabc5fb9b01643c1abffbe33}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries sched\+Ctn}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_af2f5579ac02f8b78f8a0858b6330d55a}\label{classBusScheduleSection_af2f5579ac02f8b78f8a0858b6330d55a}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries alert\+Ctn}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_ac968b25feb809e04febfaf31af723047}\label{classBusScheduleSection_ac968b25feb809e04febfaf31af723047}} 
+std\+::vector$<$ L\+T\+C\+Alert $>$ $\ast$ {\bfseries ltc\+Alerts}
+\item 
+\mbox{\Hypertarget{classBusScheduleSection_a7fc81e092d20254fc01f027ff400d488}\label{classBusScheduleSection_a7fc81e092d20254fc01f027ff400d488}} 
+bool {\bfseries first\+Show}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to display the bus schedule on the signage. 
+
+This class is used to display the bus schedule on the signage along with the route, occupancy level, congestion and their next two estimated arrival if available. It will also display the L\+TC alerts if there is any. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusScheduleSection_a4c79960cb8902ed3ca2e8898cc19d086}\label{classBusScheduleSection_a4c79960cb8902ed3ca2e8898cc19d086}} 
+\index{BusScheduleSection@{BusScheduleSection}!BusScheduleSection@{BusScheduleSection}}
+\index{BusScheduleSection@{BusScheduleSection}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{BusScheduleSection()}{BusScheduleSection()}}
+{\footnotesize\ttfamily Bus\+Schedule\+Section\+::\+Bus\+Schedule\+Section (\begin{DoxyParamCaption}\item[{Bus\+Stop \&}]{stop,  }\item[{Wt\+::\+W\+Date\+Time $\ast$}]{date\+Time,  }\item[{std\+::map$<$ int, Service $>$ \&}]{services }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}}. 
+
+This constructor will create the bus schedule section and display the bus schedule 
+\begin{DoxyParams}{Parameters}
+{\em stop} & is the bus stop for the current signage \\
+\hline
+{\em date\+Time} & is the current date and time \\
+\hline
+{\em services} & is the list of services for the trips going by that signage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusScheduleSection_a1a7f556863f486f5b640cae3d9003ed3}\label{classBusScheduleSection_a1a7f556863f486f5b640cae3d9003ed3}} 
+\index{BusScheduleSection@{BusScheduleSection}!````~BusScheduleSection@{$\sim$BusScheduleSection}}
+\index{````~BusScheduleSection@{$\sim$BusScheduleSection}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{$\sim$BusScheduleSection()}{~BusScheduleSection()}}
+{\footnotesize\ttfamily Bus\+Schedule\+Section\+::$\sim$\+Bus\+Schedule\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}}. 
+
+This destructor will delete the bus schedule section 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusScheduleSection_a949d18bc568051b87bacad1acc4baa60}\label{classBusScheduleSection_a949d18bc568051b87bacad1acc4baa60}} 
+\index{BusScheduleSection@{BusScheduleSection}!compareTime@{compareTime}}
+\index{compareTime@{compareTime}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{compareTime()}{compareTime()}}
+{\footnotesize\ttfamily bool Bus\+Schedule\+Section\+::compare\+Time (\begin{DoxyParamCaption}\item[{const Wt\+::\+W\+Time \&}]{t1,  }\item[{const Wt\+::\+W\+Time \&}]{t2 }\end{DoxyParamCaption})}
+
+
+
+This function compares two wtime objects. 
+
+This function compares two wtime objects 
+\begin{DoxyParams}{Parameters}
+{\em t1} & the first time object \\
+\hline
+{\em t2} & the second time object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if t1 is greater than t2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusScheduleSection_a7c8bb58b216945fe475c45b20910c01f}\label{classBusScheduleSection_a7c8bb58b216945fe475c45b20910c01f}} 
+\index{BusScheduleSection@{BusScheduleSection}!createDisplayedBus@{createDisplayedBus}}
+\index{createDisplayedBus@{createDisplayedBus}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{createDisplayedBus()}{createDisplayedBus()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::create\+Displayed\+Bus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to divide the buses to show in groups of 5. 
+
+This method divides the buses to show in groups of 5 since they will be shown in rotation in the web page \mbox{\Hypertarget{classBusScheduleSection_afe8d3e076fb94adaa789e94666cd0263}\label{classBusScheduleSection_afe8d3e076fb94adaa789e94666cd0263}} 
+\index{BusScheduleSection@{BusScheduleSection}!createScheduleToShow@{createScheduleToShow}}
+\index{createScheduleToShow@{createScheduleToShow}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{createScheduleToShow()}{createScheduleToShow()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::create\+Schedule\+To\+Show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the schedule to show on the web page. 
+
+This methods creates the schedule to show on the web page by getting the buses to show and the current time It will show schedule for bus that match the current time and is no more than 2 hours from the current time \mbox{\Hypertarget{classBusScheduleSection_a4d14f02987bb77f63b7414b91eac4df9}\label{classBusScheduleSection_a4d14f02987bb77f63b7414b91eac4df9}} 
+\index{BusScheduleSection@{BusScheduleSection}!displayLTCAlerts@{displayLTCAlerts}}
+\index{displayLTCAlerts@{displayLTCAlerts}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{displayLTCAlerts()}{displayLTCAlerts()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::display\+L\+T\+C\+Alerts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function displays the alerts for the bus stop. 
+
+This function displays the alerts for the L\+TC It will show them in group of 3 in rotation \mbox{\Hypertarget{classBusScheduleSection_a76f05dfa6449474119419d706fd595cb}\label{classBusScheduleSection_a76f05dfa6449474119419d706fd595cb}} 
+\index{BusScheduleSection@{BusScheduleSection}!displaySchedule@{displaySchedule}}
+\index{displaySchedule@{displaySchedule}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{displaySchedule()}{displaySchedule()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::display\+Schedule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to display the schedule on the web page. 
+
+This mehod uses the group of buses to show and the current time to display the schedule on the web page It also set the buses which position need to be shown on the map \mbox{\Hypertarget{classBusScheduleSection_aec76204139c2151a07ad8c153bfb3149}\label{classBusScheduleSection_aec76204139c2151a07ad8c153bfb3149}} 
+\index{BusScheduleSection@{BusScheduleSection}!getBusShown@{getBusShown}}
+\index{getBusShown@{getBusShown}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{getBusShown()}{getBusShown()}}
+{\footnotesize\ttfamily std\+::vector$<$ Bus $>$ Bus\+Schedule\+Section\+::get\+Bus\+Shown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function sets the get the list of bus for which the schedule is displayed. 
+
+This function sets the get the list of bus for which the schedule is displayed \begin{DoxyReturn}{Returns}
+a vector of buses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBusScheduleSection_ade82f01459495bf72af4b7a9b0ef54db}\label{classBusScheduleSection_ade82f01459495bf72af4b7a9b0ef54db}} 
+\index{BusScheduleSection@{BusScheduleSection}!getNumberOfBus@{getNumberOfBus}}
+\index{getNumberOfBus@{getNumberOfBus}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{getNumberOfBus()}{getNumberOfBus()}}
+{\footnotesize\ttfamily int Bus\+Schedule\+Section\+::get\+Number\+Of\+Bus (\begin{DoxyParamCaption}\item[{int}]{first,  }\item[{int}]{last }\end{DoxyParamCaption})}
+
+
+
+This function returns the number of buses for which the schedule will be displayed. 
+
+This function returns the number of buses for which the schedule is displayed 
+\begin{DoxyParams}{Parameters}
+{\em first} & the first bus to display \\
+\hline
+{\em last} & the last bus to display \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusScheduleSection_ac7a1f371b9c71fe8ca315274c676e511}\label{classBusScheduleSection_ac7a1f371b9c71fe8ca315274c676e511}} 
+\index{BusScheduleSection@{BusScheduleSection}!setAlerts@{setAlerts}}
+\index{setAlerts@{setAlerts}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{setAlerts()}{setAlerts()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::set\+Alerts (\begin{DoxyParamCaption}\item[{std\+::vector$<$ L\+T\+C\+Alert $>$}]{alerts }\end{DoxyParamCaption})}
+
+
+
+This function sets the alerts to display. 
+
+This function sets the alerts to display 
+\begin{DoxyParams}{Parameters}
+{\em alerts} & the vector of alerts \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusScheduleSection_a7cb82280cf0a847cd29e8ab1bf31f866}\label{classBusScheduleSection_a7cb82280cf0a847cd29e8ab1bf31f866}} 
+\index{BusScheduleSection@{BusScheduleSection}!setDateTime@{setDateTime}}
+\index{setDateTime@{setDateTime}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{setDateTime()}{setDateTime()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{Wt\+::\+W\+Date\+Time $\ast$}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+This method sets the datetime used by this section. 
+
+This method is used to set the datetime to the current datetime in the system 
+\begin{DoxyParams}{Parameters}
+{\em date\+Time} & is the current datetime in the system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusScheduleSection_a37cfa46d045951a1da01efae9549951e}\label{classBusScheduleSection_a37cfa46d045951a1da01efae9549951e}} 
+\index{BusScheduleSection@{BusScheduleSection}!setInfoLabel@{setInfoLabel}}
+\index{setInfoLabel@{setInfoLabel}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{setInfoLabel()}{setInfoLabel()}}
+{\footnotesize\ttfamily void Bus\+Schedule\+Section\+::set\+Info\+Label (\begin{DoxyParamCaption}\item[{bool}]{is\+Real\+Time }\end{DoxyParamCaption})}
+
+
+
+This function sets the message info about the schedules that are displayed. 
+
+This function sets the message info about the schedules that are displayed. It will let riders know if the schedule is real-\/time or not 
+\begin{DoxyParams}{Parameters}
+{\em is\+Real\+Time} & true if the schedule is real-\/time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusScheduleSection_a7c7b99195656841fbcb1992d024ddfd0}\label{classBusScheduleSection_a7c7b99195656841fbcb1992d024ddfd0}} 
+\index{BusScheduleSection@{BusScheduleSection}!sortSchedule@{sortSchedule}}
+\index{sortSchedule@{sortSchedule}!BusScheduleSection@{BusScheduleSection}}
+\doxysubsubsection{\texorpdfstring{sortSchedule()}{sortSchedule()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ int, Wt\+::\+W\+Time $>$ $>$ Bus\+Schedule\+Section\+::sort\+Schedule (\begin{DoxyParamCaption}\item[{std\+::map$<$ int, Wt\+::\+W\+Time $>$}]{stop\+Times }\end{DoxyParamCaption})}
+
+
+
+This function sorts the schedule. 
+
+This function sorts the stop times in a schedule in ascending order 
+\begin{DoxyParams}{Parameters}
+{\em stop\+Times} & the map of stop times \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of sorted stop times 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BusScheduleSection_8h}{Bus\+Schedule\+Section.\+h}}\item 
+\mbox{\hyperlink{BusScheduleSection_8cpp}{Bus\+Schedule\+Section.\+cpp}}\end{DoxyCompactItemize}

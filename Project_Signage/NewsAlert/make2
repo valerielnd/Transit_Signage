@@ -1,0 +1,27 @@
+CXX = g++
+CXXFLAGS = -Wall -Werror -I/usr/local/include/gq --std=c++11
+LDFLAGS = -L/home/val/western/cs3307/gumbo/gumbo-q2/gumbo-query/lib/ -lcurl -lgq
+
+JSONReq.o: JSONReq.cpp JSONReq.h ProcessJSON.h
+	$(CXX) $(CXXFLAGS) -c JSONReq.cpp
+
+NewsData.o: NewsData.cpp NewsData.h Request2.h gumbo.h
+	$(CXX) $(CXXFLAGS) -c ProcessJSON.cpp
+
+ProcessHTML.o: ProcessHTML.cpp ProcessHTML.h NewsArticle.h gumbo.h Document.h Node.h
+	$(CXX) $(CXXFLAGS) -c ProcessHTML.cpp
+
+ProcessJSON.o: ProcessJSON.cpp ProcessJSON.h NewsArticle.h
+	$(CXX) $(CXXFLAGS) -c ProcessJSON.cpp
+
+NewsArticle.o: NewsArticle.cpp NewsArticle.h
+	$(CXX) $(CXXFLAGS) -c NewsArticle.cpp
+
+Request2.o: Request2.cpp Request2.h
+	$(CXX) $(CXXFLAGS) -c Request2.cpp
+
+all: HTMLReq.o JSONReq.o NewsData.o ProcessHTML.o ProcessJSON.o NewsArticle.o Request2.o
+
+clean:
+	rm -f *.o
+

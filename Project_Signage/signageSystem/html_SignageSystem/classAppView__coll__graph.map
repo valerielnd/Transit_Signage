@@ -1,0 +1,12 @@
+<map id="AppView" name="AppView">
+<area shape="rect" id="node1" title="Class that represents the main view class of the application This class represents the main view of t..." alt="" coords="261,272,339,299"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,183,139,209"/>
+<area shape="rect" id="node3" href="$classDateTimeSection.html" title="This class is used to display the date and time on the signage." alt="" coords="69,132,203,159"/>
+<area shape="rect" id="node4" title=" " alt="" coords="277,5,421,32"/>
+<area shape="rect" id="node5" href="$classLTCAlertAndInfoSection.html" title="This class is used to display the LTC alerts and information. It is also used to display the news ale..." alt="" coords="211,132,384,159"/>
+<area shape="rect" id="node8" href="$classBusSection.html" title="This class is used to display the bus schedule and bus map on the signage." alt="" coords="398,183,493,209"/>
+<area shape="rect" id="node9" href="$classBusMapSection.html" title="This class is used to display the map with the current buses postion on the signage." alt="" coords="387,81,509,108"/>
+<area shape="rect" id="node10" href="$classBusScheduleSection.html" title="This class is used to display the bus schedule on the signage." alt="" coords="534,81,687,108"/>
+<area shape="rect" id="node6" href="$classHeader.html" title="This class is used to create the header of the page. It displays the BusStop name,..." alt="" coords="639,183,708,209"/>
+<area shape="rect" id="node7" title=" " alt="" coords="712,81,883,108"/>
+</map>

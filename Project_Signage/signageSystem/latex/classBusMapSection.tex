@@ -1,0 +1,138 @@
+\hypertarget{classBusMapSection}{}\doxysection{Bus\+Map\+Section Class Reference}
+\label{classBusMapSection}\index{BusMapSection@{BusMapSection}}
+
+
+This class is used to display the map with the current buses postion on the signage.  
+
+
+
+
+{\ttfamily \#include $<$Bus\+Map\+Section.\+h$>$}
+
+
+
+Inheritance diagram for Bus\+Map\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classBusMapSection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+Map\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classBusMapSection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusMapSection_a2478a18caf8fb5073db95535e464f12e}{Bus\+Map\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusMapSection_ac4aa32a91ddcbce2469370276e375b9f}{$\sim$\+Bus\+Map\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusMapSection_a521699f0b8f11d180240d9d8322f96e0}{setbuses\+On\+Map}} (std\+::vector$<$ Bus $>$ buses)
+\begin{DoxyCompactList}\small\item\em This method is used to set the buses that will be displayed on the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusMapSection_ab94130b0bf604d06570fbceb62136230}{add\+Markers}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to add markers to the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusMapSection_a9516caec704d27865f9bf7dd6e6ddb7c}{set\+Stop\+Position}} (double lat, double longt)
+\begin{DoxyCompactList}\small\item\em This method is used to set the stop position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBusMapSection_a0ddbcde37bd90ca041c04f00d3b69b3f}\label{classBusMapSection_a0ddbcde37bd90ca041c04f00d3b69b3f}} 
+Wt\+::\+W\+Google\+Map $\ast$ {\bfseries map}
+\item 
+\mbox{\Hypertarget{classBusMapSection_af55120f94a7400091039ae80dc9afeeb}\label{classBusMapSection_af55120f94a7400091039ae80dc9afeeb}} 
+std\+::vector$<$ Bus $>$ {\bfseries buses\+On\+Map}
+\item 
+\mbox{\Hypertarget{classBusMapSection_aa1512da3b9e8765dda88ef08484a69a7}\label{classBusMapSection_aa1512da3b9e8765dda88ef08484a69a7}} 
+double {\bfseries stop\+Lat}
+\item 
+\mbox{\Hypertarget{classBusMapSection_ab3135ed356fbee4af91dbe61c488642f}\label{classBusMapSection_ab3135ed356fbee4af91dbe61c488642f}} 
+double {\bfseries stop\+Long}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to display the map with the current buses postion on the signage. 
+
+This class is used to display the map with the current buses postion on the signage It is a container widget that contains a google map It uses the buses coordinates to display their positions 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusMapSection_a2478a18caf8fb5073db95535e464f12e}\label{classBusMapSection_a2478a18caf8fb5073db95535e464f12e}} 
+\index{BusMapSection@{BusMapSection}!BusMapSection@{BusMapSection}}
+\index{BusMapSection@{BusMapSection}!BusMapSection@{BusMapSection}}
+\doxysubsubsection{\texorpdfstring{BusMapSection()}{BusMapSection()}}
+{\footnotesize\ttfamily Bus\+Map\+Section\+::\+Bus\+Map\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}}. 
+
+This method is used to create a \mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}} object It creates a google map and sets its properties It also sets the style sheet for the map \mbox{\Hypertarget{classBusMapSection_ac4aa32a91ddcbce2469370276e375b9f}\label{classBusMapSection_ac4aa32a91ddcbce2469370276e375b9f}} 
+\index{BusMapSection@{BusMapSection}!````~BusMapSection@{$\sim$BusMapSection}}
+\index{````~BusMapSection@{$\sim$BusMapSection}!BusMapSection@{BusMapSection}}
+\doxysubsubsection{\texorpdfstring{$\sim$BusMapSection()}{~BusMapSection()}}
+{\footnotesize\ttfamily Bus\+Map\+Section\+::$\sim$\+Bus\+Map\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}}. 
+
+This method is used to delete a \mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusMapSection_ab94130b0bf604d06570fbceb62136230}\label{classBusMapSection_ab94130b0bf604d06570fbceb62136230}} 
+\index{BusMapSection@{BusMapSection}!addMarkers@{addMarkers}}
+\index{addMarkers@{addMarkers}!BusMapSection@{BusMapSection}}
+\doxysubsubsection{\texorpdfstring{addMarkers()}{addMarkers()}}
+{\footnotesize\ttfamily void Bus\+Map\+Section\+::add\+Markers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to add markers to the map. 
+
+This method is used to add markers to the map It takes the buses coordinates and displays them on the map \mbox{\Hypertarget{classBusMapSection_a521699f0b8f11d180240d9d8322f96e0}\label{classBusMapSection_a521699f0b8f11d180240d9d8322f96e0}} 
+\index{BusMapSection@{BusMapSection}!setbusesOnMap@{setbusesOnMap}}
+\index{setbusesOnMap@{setbusesOnMap}!BusMapSection@{BusMapSection}}
+\doxysubsubsection{\texorpdfstring{setbusesOnMap()}{setbusesOnMap()}}
+{\footnotesize\ttfamily void Bus\+Map\+Section\+::setbuses\+On\+Map (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Bus $>$}]{buses }\end{DoxyParamCaption})}
+
+
+
+This method is used to set the buses that will be displayed on the map. 
+
+This method is used to set the buses that will be displayed on the map It takes a vector of buses as a parameter 
+\begin{DoxyParams}{Parameters}
+{\em buses} & a vector of buses \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusMapSection_a9516caec704d27865f9bf7dd6e6ddb7c}\label{classBusMapSection_a9516caec704d27865f9bf7dd6e6ddb7c}} 
+\index{BusMapSection@{BusMapSection}!setStopPosition@{setStopPosition}}
+\index{setStopPosition@{setStopPosition}!BusMapSection@{BusMapSection}}
+\doxysubsubsection{\texorpdfstring{setStopPosition()}{setStopPosition()}}
+{\footnotesize\ttfamily void Bus\+Map\+Section\+::set\+Stop\+Position (\begin{DoxyParamCaption}\item[{double}]{lat,  }\item[{double}]{longt }\end{DoxyParamCaption})}
+
+
+
+This method is used to set the stop position. 
+
+This method is used to set the stop position 
+\begin{DoxyParams}{Parameters}
+{\em lat} & the latitude of the stop \\
+\hline
+{\em longt} & the longitude of the bus \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BusMapSection_8h}{Bus\+Map\+Section.\+h}}\item 
+\mbox{\hyperlink{BusMapSection_8cpp}{Bus\+Map\+Section.\+cpp}}\end{DoxyCompactItemize}

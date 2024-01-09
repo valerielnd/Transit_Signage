@@ -1,0 +1,171 @@
+\hypertarget{classLTCAlertAndInfoSection}{}\doxysection{L\+T\+C\+Alert\+And\+Info\+Section Class Reference}
+\label{classLTCAlertAndInfoSection}\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+
+
+This class is used to display the L\+TC alerts and information. It is also used to display the news alerts.  
+
+
+
+
+{\ttfamily \#include $<$L\+T\+C\+Alert\+And\+Info\+Section.\+h$>$}
+
+
+
+Inheritance diagram for L\+T\+C\+Alert\+And\+Info\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classLTCAlertAndInfoSection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for L\+T\+C\+Alert\+And\+Info\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classLTCAlertAndInfoSection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLTCAlertAndInfoSection_a8dd0b44f1104c8ad44f5e148741c3e61}{L\+T\+C\+Alert\+And\+Info\+Section}} (L\+T\+C\+Info info, News\+Data n\+Info)
+\begin{DoxyCompactList}\small\item\em Constructor of the class \mbox{\hyperlink{classLTCAlertAndInfoSection}{L\+T\+C\+Alert\+And\+Info\+Section}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLTCAlertAndInfoSection_ab465740202f452df825e71cf3ddacd16}{create\+L\+T\+C\+Accessbility}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the L\+TC accessibility part of the section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLTCAlertAndInfoSection_a982e05992bd8bb4609f15526ad8bec74}{create\+L\+T\+C\+Contact\+Info}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the L\+TC contact part of the section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLTCAlertAndInfoSection_a7b8f5caaa20d6b87dac7b5ad312127f8}{create\+News\+Alerts}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the L\+TC news alerts part of the section. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLTCAlertAndInfoSection_a01b85bd4cf5c4f552bb5dc3507931dba}{update\+News\+Data}} (News\+Data \&n\+Info)
+\begin{DoxyCompactList}\small\item\em This method is used to update the news data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLTCAlertAndInfoSection_a47bf7f21d8b39d5d4926fda5b518a990}{create\+L\+T\+C\+Fares}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the L\+TC fares part of the section. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_aa92eb404e097e4d20e25a83f240c84e2}\label{classLTCAlertAndInfoSection_aa92eb404e097e4d20e25a83f240c84e2}} 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries L\+T\+C\+Al\+And\+Inf\+Section}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a0ea42334804346dc8d0624f5374bd813}\label{classLTCAlertAndInfoSection_a0ea42334804346dc8d0624f5374bd813}} 
+Wt\+::\+W\+Label $\ast$ {\bfseries L\+T\+C\+Alerts}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_aa96c4b66bae011fbf18e8aab20250525}\label{classLTCAlertAndInfoSection_aa96c4b66bae011fbf18e8aab20250525}} 
+std\+::string {\bfseries fleet\+Info}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_aeec33ac4cf300a5ab455595a16b1a4e0}\label{classLTCAlertAndInfoSection_aeec33ac4cf300a5ab455595a16b1a4e0}} 
+std\+::string {\bfseries stop\+Info}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_af57da7cccc7626dbd623f64f06681e98}\label{classLTCAlertAndInfoSection_af57da7cccc7626dbd623f64f06681e98}} 
+std\+::string {\bfseries phone\+Info}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_ab41953b617f2dd639ea54cf5990482be}\label{classLTCAlertAndInfoSection_ab41953b617f2dd639ea54cf5990482be}} 
+std\+::string {\bfseries email\+Info}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a642641430053711d41d0c074217ae1be}\label{classLTCAlertAndInfoSection_a642641430053711d41d0c074217ae1be}} 
+std\+::string {\bfseries address\+Info}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a52b9fffed5ce41311b1271fa2d3bd9a0}\label{classLTCAlertAndInfoSection_a52b9fffed5ce41311b1271fa2d3bd9a0}} 
+Wt\+::\+W\+Label $\ast$ {\bfseries News\+Alerts}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a3f232382706336ba62d4b992e42e2ab8}\label{classLTCAlertAndInfoSection_a3f232382706336ba62d4b992e42e2ab8}} 
+Wt\+::\+W\+Timer {\bfseries timer}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a82938aedab189119c46a6a7c787d2eed}\label{classLTCAlertAndInfoSection_a82938aedab189119c46a6a7c787d2eed}} 
+std\+::vector$<$ News\+Article $>$ {\bfseries news\+Articles}
+\item 
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a95b97b46a9607f24566d554c3f49eb8e}\label{classLTCAlertAndInfoSection_a95b97b46a9607f24566d554c3f49eb8e}} 
+std\+::vector$<$ Passenger $>$ {\bfseries passengers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to display the L\+TC alerts and information. It is also used to display the news alerts. 
+
+This class is used to create the section on the web page where the L\+TC alerts and information are displayed. It also creates the section where the news alerts are displayed. Each category of information are shown in rotation every 30 seconds 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_a8dd0b44f1104c8ad44f5e148741c3e61}\label{classLTCAlertAndInfoSection_a8dd0b44f1104c8ad44f5e148741c3e61}} 
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\doxysubsubsection{\texorpdfstring{LTCAlertAndInfoSection()}{LTCAlertAndInfoSection()}}
+{\footnotesize\ttfamily L\+T\+C\+Alert\+And\+Info\+Section\+::\+L\+T\+C\+Alert\+And\+Info\+Section (\begin{DoxyParamCaption}\item[{L\+T\+C\+Info}]{info,  }\item[{News\+Data}]{n\+Info }\end{DoxyParamCaption})}
+
+
+
+Constructor of the class \mbox{\hyperlink{classLTCAlertAndInfoSection}{L\+T\+C\+Alert\+And\+Info\+Section}}. 
+
+Constructor for the class \mbox{\hyperlink{classLTCAlertAndInfoSection}{L\+T\+C\+Alert\+And\+Info\+Section}} It initializes the member of the class and creates the section container 
+\begin{DoxyParams}{Parameters}
+{\em info} & the L\+T\+C\+Info object \\
+\hline
+{\em n\+Info} & the News\+Data object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLTCAlertAndInfoSection_ab465740202f452df825e71cf3ddacd16}\label{classLTCAlertAndInfoSection_ab465740202f452df825e71cf3ddacd16}} 
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!createLTCAccessbility@{createLTCAccessbility}}
+\index{createLTCAccessbility@{createLTCAccessbility}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\doxysubsubsection{\texorpdfstring{createLTCAccessbility()}{createLTCAccessbility()}}
+{\footnotesize\ttfamily void L\+T\+C\+Alert\+And\+Info\+Section\+::create\+L\+T\+C\+Accessbility (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the L\+TC accessibility part of the section. 
+
+This methods creates the L\+TC accessibility part of the section of the web page It creates the container for the section and adds the title and the info \mbox{\Hypertarget{classLTCAlertAndInfoSection_a982e05992bd8bb4609f15526ad8bec74}\label{classLTCAlertAndInfoSection_a982e05992bd8bb4609f15526ad8bec74}} 
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!createLTCContactInfo@{createLTCContactInfo}}
+\index{createLTCContactInfo@{createLTCContactInfo}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\doxysubsubsection{\texorpdfstring{createLTCContactInfo()}{createLTCContactInfo()}}
+{\footnotesize\ttfamily void L\+T\+C\+Alert\+And\+Info\+Section\+::create\+L\+T\+C\+Contact\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the L\+TC contact part of the section. 
+
+This methods creates the L\+TC contact part of the section of the web page It creates the container for the contact info and adds the title and the info It is used to show L\+TC phone, address and email \mbox{\Hypertarget{classLTCAlertAndInfoSection_a47bf7f21d8b39d5d4926fda5b518a990}\label{classLTCAlertAndInfoSection_a47bf7f21d8b39d5d4926fda5b518a990}} 
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!createLTCFares@{createLTCFares}}
+\index{createLTCFares@{createLTCFares}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\doxysubsubsection{\texorpdfstring{createLTCFares()}{createLTCFares()}}
+{\footnotesize\ttfamily void L\+T\+C\+Alert\+And\+Info\+Section\+::create\+L\+T\+C\+Fares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the L\+TC fares part of the section. 
+
+This methods creates the L\+TC fares part of the section of the web page It creates the container for the fares and adds the title and the fares It is used to show the fares from the L\+TC website \mbox{\Hypertarget{classLTCAlertAndInfoSection_a7b8f5caaa20d6b87dac7b5ad312127f8}\label{classLTCAlertAndInfoSection_a7b8f5caaa20d6b87dac7b5ad312127f8}} 
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!createNewsAlerts@{createNewsAlerts}}
+\index{createNewsAlerts@{createNewsAlerts}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\doxysubsubsection{\texorpdfstring{createNewsAlerts()}{createNewsAlerts()}}
+{\footnotesize\ttfamily void L\+T\+C\+Alert\+And\+Info\+Section\+::create\+News\+Alerts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the L\+TC news alerts part of the section. 
+
+This methods creates the L\+TC news alerts part of the section of the web page It creates the container for the news alerts and adds the title and the news alerts It is used to show the news alerts from Western or the News A\+PI \mbox{\Hypertarget{classLTCAlertAndInfoSection_a01b85bd4cf5c4f552bb5dc3507931dba}\label{classLTCAlertAndInfoSection_a01b85bd4cf5c4f552bb5dc3507931dba}} 
+\index{LTCAlertAndInfoSection@{LTCAlertAndInfoSection}!updateNewsData@{updateNewsData}}
+\index{updateNewsData@{updateNewsData}!LTCAlertAndInfoSection@{LTCAlertAndInfoSection}}
+\doxysubsubsection{\texorpdfstring{updateNewsData()}{updateNewsData()}}
+{\footnotesize\ttfamily void L\+T\+C\+Alert\+And\+Info\+Section\+::update\+News\+Data (\begin{DoxyParamCaption}\item[{News\+Data \&}]{n\+Info }\end{DoxyParamCaption})}
+
+
+
+This method is used to update the news data. 
+
+It is used to update the news data from Western or the News A\+PI. It will trigger get\+News\+Data() method from the News\+Data class. 
+\begin{DoxyParams}{Parameters}
+{\em n\+Info} & is the News\+Data object that contains the news data. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LTCAlertAndInfoSection_8h}{L\+T\+C\+Alert\+And\+Info\+Section.\+h}}\item 
+\mbox{\hyperlink{LTCAlertAndInfoSection_8cpp}{L\+T\+C\+Alert\+And\+Info\+Section.\+cpp}}\end{DoxyCompactItemize}

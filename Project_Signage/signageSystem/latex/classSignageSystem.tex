@@ -1,0 +1,247 @@
+\hypertarget{classSignageSystem}{}\doxysection{Signage\+System Class Reference}
+\label{classSignageSystem}\index{SignageSystem@{SignageSystem}}
+
+
+This class represents the Signage System being built.  
+
+
+
+
+{\ttfamily \#include $<$Signage\+System.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSignageSystem_a289b350ba38697414de7f996343b5a98}{Signage\+System}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classSignageSystem}{Signage\+System}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSignageSystem_af19eb4e3112ba2c08b529296a03f20f6}{$\sim$\+Signage\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classSignageSystem}{Signage\+System}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_a2544eef0665b40f9887a3566ff6411cd}{set\+L\+T\+C\+Files}} (std\+::vector$<$ std\+::string $>$ files)
+\begin{DoxyCompactList}\small\item\em Sets the L\+TC text files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_a5233eb0a0cd81cf986049890b548c26e}{set\+News\+A\+P\+Is}} (std\+::vector$<$ U\+R\+L\+Req $\ast$ $>$ A\+P\+Is)
+\begin{DoxyCompactList}\small\item\em Sets the news A\+P\+Is. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_aea69da3577ceb4efd96a472aaa0c2ca3}{set\+Weather\+A\+P\+Is}} (std\+::vector$<$ A\+P\+I\+Req $\ast$ $>$ A\+P\+Is)
+\begin{DoxyCompactList}\small\item\em Sets the weather A\+P\+Is. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_ac04ae631c0b91201468d927356f0ee26}{create\+L\+T\+C\+Data}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the L\+TC data needed in the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_a005a1f26c0e3363c7a2bcc6d1e5d63f1}{create\+News\+Data}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the news data needed in the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_a539982180beb18395e101bd4985f4b6f}{create\+Weather\+Data}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the weather data needed in the system. \end{DoxyCompactList}\item 
+L\+T\+C\+Data \mbox{\hyperlink{classSignageSystem_af5fa05366d1504c5c0ec3577536daf26}{get\+L\+T\+C\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the L\+TC data. \end{DoxyCompactList}\item 
+News\+Data \mbox{\hyperlink{classSignageSystem_a762939dacf8d0729b650a56fceca2771}{get\+News\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the news data. \end{DoxyCompactList}\item 
+Weather\+Data \mbox{\hyperlink{classSignageSystem_a3e9a74fdd3e085de9d65629c1b5d088e}{get\+Weather\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the weather data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSignageSystem_a6af6fa7902479312dad106ae32979b58}{create\+Weather\+Url}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the news urls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_af7c355db7c17dd81333a4f82c9a6f2c5}{create\+News\+Url}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the news urls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSignageSystem_a4ab8523c60dd518243e2ee68fed0d122}{create\+L\+T\+C\+Files}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the L\+TC text files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSignageSystem_a39b65330ded3ff35ee6b648f763ec258}\label{classSignageSystem_a39b65330ded3ff35ee6b648f763ec258}} 
+L\+T\+C\+Data {\bfseries L\+T\+C\+App\+Data}
+\item 
+\mbox{\Hypertarget{classSignageSystem_aff08766d306b49e99a34e2a3e009eebf}\label{classSignageSystem_aff08766d306b49e99a34e2a3e009eebf}} 
+News\+Data {\bfseries news\+App\+Data}
+\item 
+\mbox{\Hypertarget{classSignageSystem_a898b0b1dc8beed718ba0e8eb764d79e3}\label{classSignageSystem_a898b0b1dc8beed718ba0e8eb764d79e3}} 
+Weather\+Data {\bfseries weather\+App\+Data}
+\item 
+\mbox{\Hypertarget{classSignageSystem_aa384f5704a4f20f29cd3d32c617039e4}\label{classSignageSystem_aa384f5704a4f20f29cd3d32c617039e4}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries L\+T\+C\+Files}
+\item 
+\mbox{\Hypertarget{classSignageSystem_a3ad17eeeb430a9c9b5b75a580621c2d0}\label{classSignageSystem_a3ad17eeeb430a9c9b5b75a580621c2d0}} 
+std\+::vector$<$ U\+R\+L\+Req $\ast$ $>$ {\bfseries news\+A\+P\+Is}
+\item 
+\mbox{\Hypertarget{classSignageSystem_a66ee11379d861d47dd29afffc6030dc5}\label{classSignageSystem_a66ee11379d861d47dd29afffc6030dc5}} 
+std\+::vector$<$ A\+P\+I\+Req $\ast$ $>$ {\bfseries weather\+A\+P\+Is}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the Signage System being built. 
+
+This class represents the Signage System being built. It is responsible for creating the data for view classes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSignageSystem_a289b350ba38697414de7f996343b5a98}\label{classSignageSystem_a289b350ba38697414de7f996343b5a98}} 
+\index{SignageSystem@{SignageSystem}!SignageSystem@{SignageSystem}}
+\index{SignageSystem@{SignageSystem}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{SignageSystem()}{SignageSystem()}}
+{\footnotesize\ttfamily Signage\+System\+::\+Signage\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classSignageSystem}{Signage\+System}}. 
+
+This method construct the \mbox{\hyperlink{classSignageSystem}{Signage\+System}} It initializes all the variables to their default values \mbox{\Hypertarget{classSignageSystem_af19eb4e3112ba2c08b529296a03f20f6}\label{classSignageSystem_af19eb4e3112ba2c08b529296a03f20f6}} 
+\index{SignageSystem@{SignageSystem}!````~SignageSystem@{$\sim$SignageSystem}}
+\index{````~SignageSystem@{$\sim$SignageSystem}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$SignageSystem()}{~SignageSystem()}}
+{\footnotesize\ttfamily Signage\+System\+::$\sim$\+Signage\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classSignageSystem}{Signage\+System}}. 
+
+Destructor for \mbox{\hyperlink{classSignageSystem}{Signage\+System}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSignageSystem_ac04ae631c0b91201468d927356f0ee26}\label{classSignageSystem_ac04ae631c0b91201468d927356f0ee26}} 
+\index{SignageSystem@{SignageSystem}!createLTCData@{createLTCData}}
+\index{createLTCData@{createLTCData}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{createLTCData()}{createLTCData()}}
+{\footnotesize\ttfamily void Signage\+System\+::create\+L\+T\+C\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the L\+TC data needed in the system. 
+
+This method creates the L\+TC data It creates the L\+TC stops, the stops information, the service days, the buses, the trips and the schedule for the buses \mbox{\Hypertarget{classSignageSystem_a4ab8523c60dd518243e2ee68fed0d122}\label{classSignageSystem_a4ab8523c60dd518243e2ee68fed0d122}} 
+\index{SignageSystem@{SignageSystem}!createLTCFiles@{createLTCFiles}}
+\index{createLTCFiles@{createLTCFiles}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{createLTCFiles()}{createLTCFiles()}}
+{\footnotesize\ttfamily void Signage\+System\+::create\+L\+T\+C\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is used to create the L\+TC text files. 
+
+This method creates the vector of L\+TC text files Those files are the static file with bus, stops, trips information They contain L\+TC pre-\/planned schedule for the buses \mbox{\Hypertarget{classSignageSystem_a005a1f26c0e3363c7a2bcc6d1e5d63f1}\label{classSignageSystem_a005a1f26c0e3363c7a2bcc6d1e5d63f1}} 
+\index{SignageSystem@{SignageSystem}!createNewsData@{createNewsData}}
+\index{createNewsData@{createNewsData}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{createNewsData()}{createNewsData()}}
+{\footnotesize\ttfamily void Signage\+System\+::create\+News\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the news data needed in the system. 
+
+This method creates the news data The data is based on the information retrieve from the news A\+P\+Is \mbox{\Hypertarget{classSignageSystem_af7c355db7c17dd81333a4f82c9a6f2c5}\label{classSignageSystem_af7c355db7c17dd81333a4f82c9a6f2c5}} 
+\index{SignageSystem@{SignageSystem}!createNewsUrl@{createNewsUrl}}
+\index{createNewsUrl@{createNewsUrl}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{createNewsUrl()}{createNewsUrl()}}
+{\footnotesize\ttfamily void Signage\+System\+::create\+News\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is used to create the news urls. 
+
+This method creates the urls to connect to the Western News Website and the News A\+PI \mbox{\Hypertarget{classSignageSystem_a539982180beb18395e101bd4985f4b6f}\label{classSignageSystem_a539982180beb18395e101bd4985f4b6f}} 
+\index{SignageSystem@{SignageSystem}!createWeatherData@{createWeatherData}}
+\index{createWeatherData@{createWeatherData}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{createWeatherData()}{createWeatherData()}}
+{\footnotesize\ttfamily void Signage\+System\+::create\+Weather\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to create the weather data needed in the system. 
+
+This method creates the weather data The data is based on the information retrieve from the weather A\+P\+Is \mbox{\Hypertarget{classSignageSystem_a6af6fa7902479312dad106ae32979b58}\label{classSignageSystem_a6af6fa7902479312dad106ae32979b58}} 
+\index{SignageSystem@{SignageSystem}!createWeatherUrl@{createWeatherUrl}}
+\index{createWeatherUrl@{createWeatherUrl}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{createWeatherUrl()}{createWeatherUrl()}}
+{\footnotesize\ttfamily void Signage\+System\+::create\+Weather\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is used to create the news urls. 
+
+This method creates the urls to connect to the Western News Website and the News A\+PI \mbox{\Hypertarget{classSignageSystem_af5fa05366d1504c5c0ec3577536daf26}\label{classSignageSystem_af5fa05366d1504c5c0ec3577536daf26}} 
+\index{SignageSystem@{SignageSystem}!getLTCData@{getLTCData}}
+\index{getLTCData@{getLTCData}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{getLTCData()}{getLTCData()}}
+{\footnotesize\ttfamily L\+T\+C\+Data Signage\+System\+::get\+L\+T\+C\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the L\+TC data. 
+
+This method returns the L\+TC data \begin{DoxyReturn}{Returns}
+the L\+T\+C\+Data object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSignageSystem_a762939dacf8d0729b650a56fceca2771}\label{classSignageSystem_a762939dacf8d0729b650a56fceca2771}} 
+\index{SignageSystem@{SignageSystem}!getNewsData@{getNewsData}}
+\index{getNewsData@{getNewsData}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{getNewsData()}{getNewsData()}}
+{\footnotesize\ttfamily News\+Data Signage\+System\+::get\+News\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the news data. 
+
+This method returns the news data \begin{DoxyReturn}{Returns}
+the News\+Data object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSignageSystem_a3e9a74fdd3e085de9d65629c1b5d088e}\label{classSignageSystem_a3e9a74fdd3e085de9d65629c1b5d088e}} 
+\index{SignageSystem@{SignageSystem}!getWeatherData@{getWeatherData}}
+\index{getWeatherData@{getWeatherData}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{getWeatherData()}{getWeatherData()}}
+{\footnotesize\ttfamily Weather\+Data Signage\+System\+::get\+Weather\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter for the weather data. 
+
+This method returns the weather data \begin{DoxyReturn}{Returns}
+the Weather\+Data object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSignageSystem_a2544eef0665b40f9887a3566ff6411cd}\label{classSignageSystem_a2544eef0665b40f9887a3566ff6411cd}} 
+\index{SignageSystem@{SignageSystem}!setLTCFiles@{setLTCFiles}}
+\index{setLTCFiles@{setLTCFiles}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{setLTCFiles()}{setLTCFiles()}}
+{\footnotesize\ttfamily void Signage\+System\+::set\+L\+T\+C\+Files (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{files }\end{DoxyParamCaption})}
+
+
+
+Sets the L\+TC text files. 
+
+This method sets the L\+TC text files 
+\begin{DoxyParams}{Parameters}
+{\em files} & is the vector of L\+TC text files \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignageSystem_a5233eb0a0cd81cf986049890b548c26e}\label{classSignageSystem_a5233eb0a0cd81cf986049890b548c26e}} 
+\index{SignageSystem@{SignageSystem}!setNewsAPIs@{setNewsAPIs}}
+\index{setNewsAPIs@{setNewsAPIs}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{setNewsAPIs()}{setNewsAPIs()}}
+{\footnotesize\ttfamily void Signage\+System\+::set\+News\+A\+P\+Is (\begin{DoxyParamCaption}\item[{std\+::vector$<$ U\+R\+L\+Req $\ast$ $>$}]{A\+P\+Is }\end{DoxyParamCaption})}
+
+
+
+Sets the news A\+P\+Is. 
+
+This method sets the news A\+P\+Is 
+\begin{DoxyParams}{Parameters}
+{\em A\+P\+Is} & is the vector of news A\+P\+Is \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSignageSystem_aea69da3577ceb4efd96a472aaa0c2ca3}\label{classSignageSystem_aea69da3577ceb4efd96a472aaa0c2ca3}} 
+\index{SignageSystem@{SignageSystem}!setWeatherAPIs@{setWeatherAPIs}}
+\index{setWeatherAPIs@{setWeatherAPIs}!SignageSystem@{SignageSystem}}
+\doxysubsubsection{\texorpdfstring{setWeatherAPIs()}{setWeatherAPIs()}}
+{\footnotesize\ttfamily void Signage\+System\+::set\+Weather\+A\+P\+Is (\begin{DoxyParamCaption}\item[{std\+::vector$<$ A\+P\+I\+Req $\ast$ $>$}]{A\+P\+Is }\end{DoxyParamCaption})}
+
+
+
+Sets the weather A\+P\+Is. 
+
+This method sets the weather A\+P\+Is 
+\begin{DoxyParams}{Parameters}
+{\em A\+P\+Is} & is the vector of weather A\+P\+Is \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Signage\+System.\+h\item 
+\mbox{\hyperlink{SignageSystem_8cpp}{Signage\+System.\+cpp}}\end{DoxyCompactItemize}

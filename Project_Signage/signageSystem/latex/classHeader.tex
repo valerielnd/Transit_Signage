@@ -1,0 +1,230 @@
+\hypertarget{classHeader}{}\doxysection{Header Class Reference}
+\label{classHeader}\index{Header@{Header}}
+
+
+This class is used to create the header of the page. It displays the Bus\+Stop name, the weather information and the logo of the company.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
+
+
+Inheritance diagram for Header\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHeader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Header\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classHeader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHeader_adb9913206d8da72b823e0eb7cef64fb8}{Header}} (Bus\+Stop \&stop, Weather\+Data \&info, std\+::string l\+File, std\+::string s\+File)
+\begin{DoxyCompactList}\small\item\em Constructor for the class \mbox{\hyperlink{classHeader}{Header}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHeader_a035f03005e0534c058d61c04fa5e3c9e}{$\sim$\+Header}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the class \mbox{\hyperlink{classHeader}{Header}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHeader_a9eb8a99e19332a1e81b8b8b8c90218a5}{Header}} (const \mbox{\hyperlink{classHeader}{Header}} \&other)
+\begin{DoxyCompactList}\small\item\em This constructor is used to create a copy of the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeader_a2f87bdba0e99ab6f24586ebeb0ffdd40}{set\+Logo\+File}} (std\+::string file)
+\begin{DoxyCompactList}\small\item\em This method is used to set the logo file of the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeader_a445789c468b56a003e2ce0728591bd8e}{set\+Slogan\+File}} (std\+::string file)
+\begin{DoxyCompactList}\small\item\em This method is used to set the slogan file of the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeader_a03d1a25ca1e7a5f218d938bba4acb72b}{set\+Bus\+Stop}} (Bus\+Stop \&stop)
+\begin{DoxyCompactList}\small\item\em This method is used to set Bus\+Stop object of the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeader_ab4b5a4500d0fdc3953e7b0ffa16b625d}{set\+Weather\+Info}} (Weather\+Data \&info)
+\begin{DoxyCompactList}\small\item\em This method is used to set the weather information of the header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHeader_ad304559fc3d8d6734ea5d0ad2e11349a}{update\+Weather\+Info}} (Weather\+Data \&info)
+\begin{DoxyCompactList}\small\item\em This method is used to update the weather information of the header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHeader_a22ffd7c4cb0c8377c860c33b04e225ae}{create\+Header}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to create the header of the page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHeader_a9cd45d52dcdcc763736daa78654a8708}\label{classHeader_a9cd45d52dcdcc763736daa78654a8708}} 
+Bus\+Stop \& {\bfseries b\+Stop}
+\item 
+\mbox{\Hypertarget{classHeader_abfaf89abdc4b12334a8031ed69918a89}\label{classHeader_abfaf89abdc4b12334a8031ed69918a89}} 
+Weather\+Data \& {\bfseries w\+Info}
+\item 
+\mbox{\Hypertarget{classHeader_a907605f836c2965d4fa99083facdd667}\label{classHeader_a907605f836c2965d4fa99083facdd667}} 
+std\+::string {\bfseries logo\+File}
+\item 
+\mbox{\Hypertarget{classHeader_ac3c99dc439ca55723038d1293dfde898}\label{classHeader_ac3c99dc439ca55723038d1293dfde898}} 
+std\+::string {\bfseries slogan\+File}
+\item 
+\mbox{\Hypertarget{classHeader_a2a24f2a624d7edebcd850096efef86d8}\label{classHeader_a2a24f2a624d7edebcd850096efef86d8}} 
+std\+::string {\bfseries stop\+Name}
+\item 
+\mbox{\Hypertarget{classHeader_a0ee2b34821719bd5bfac320a133abff0}\label{classHeader_a0ee2b34821719bd5bfac320a133abff0}} 
+std\+::map$<$ std\+::string, std\+::string $>$ $\ast$ {\bfseries temperature\+Imgs}
+\item 
+\mbox{\Hypertarget{classHeader_afaf012a462b85aa974102867ddc4f97c}\label{classHeader_afaf012a462b85aa974102867ddc4f97c}} 
+Wt\+::\+W\+Text $\ast$ {\bfseries text\+Temp}
+\item 
+\mbox{\Hypertarget{classHeader_a448e58205794cafd3e364ecf93b7a9dc}\label{classHeader_a448e58205794cafd3e364ecf93b7a9dc}} 
+Wt\+::\+W\+Image $\ast$ {\bfseries temp\+Image}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to create the header of the page. It displays the Bus\+Stop name, the weather information and the logo of the company. 
+
+This class is used to create the header section of the page. It displays the Bus\+Stop name, the weather information and the logo of the company. It will also be used to update the weather information displayed 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHeader_adb9913206d8da72b823e0eb7cef64fb8}\label{classHeader_adb9913206d8da72b823e0eb7cef64fb8}} 
+\index{Header@{Header}!Header@{Header}}
+\index{Header@{Header}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{Header()}{Header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Header\+::\+Header (\begin{DoxyParamCaption}\item[{Bus\+Stop \&}]{stop,  }\item[{Weather\+Data \&}]{info,  }\item[{std\+::string}]{l\+File,  }\item[{std\+::string}]{s\+File }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class \mbox{\hyperlink{classHeader}{Header}}. 
+
+This method contstruct a header object and set the logo, slogan, bus stop name and weather information 
+\begin{DoxyParams}{Parameters}
+{\em stop} & the bus stop \\
+\hline
+{\em info} & the weather information \\
+\hline
+{\em l\+File} & the file name of the logo \\
+\hline
+{\em s\+File} & the file name of the slogan \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeader_a035f03005e0534c058d61c04fa5e3c9e}\label{classHeader_a035f03005e0534c058d61c04fa5e3c9e}} 
+\index{Header@{Header}!````~Header@{$\sim$Header}}
+\index{````~Header@{$\sim$Header}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{$\sim$Header()}{~Header()}}
+{\footnotesize\ttfamily Header\+::$\sim$\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the class \mbox{\hyperlink{classHeader}{Header}}. 
+
+This method is used to destroy the header object It will be called automatically when an instance of the header class is destroyed \mbox{\Hypertarget{classHeader_a9eb8a99e19332a1e81b8b8b8c90218a5}\label{classHeader_a9eb8a99e19332a1e81b8b8b8c90218a5}} 
+\index{Header@{Header}!Header@{Header}}
+\index{Header@{Header}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{Header()}{Header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Header\+::\+Header (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classHeader}{Header}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+This constructor is used to create a copy of the header. 
+
+This method creatse a copy of an existing header. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the header to copy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHeader_a22ffd7c4cb0c8377c860c33b04e225ae}\label{classHeader_a22ffd7c4cb0c8377c860c33b04e225ae}} 
+\index{Header@{Header}!createHeader@{createHeader}}
+\index{createHeader@{createHeader}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{createHeader()}{createHeader()}}
+{\footnotesize\ttfamily void Header\+::create\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This method is used to create the header of the page. 
+
+This method is used to create the header section of the page. It displays the Bus\+Stop name, the weather information and the logo of the company. \mbox{\Hypertarget{classHeader_a03d1a25ca1e7a5f218d938bba4acb72b}\label{classHeader_a03d1a25ca1e7a5f218d938bba4acb72b}} 
+\index{Header@{Header}!setBusStop@{setBusStop}}
+\index{setBusStop@{setBusStop}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{setBusStop()}{setBusStop()}}
+{\footnotesize\ttfamily void Header\+::set\+Bus\+Stop (\begin{DoxyParamCaption}\item[{Bus\+Stop \&}]{stop }\end{DoxyParamCaption})}
+
+
+
+This method is used to set Bus\+Stop object of the header. 
+
+This method sets the Bus\+Stop object of the header. 
+\begin{DoxyParams}{Parameters}
+{\em stop} & The Bus\+Stop object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeader_a2f87bdba0e99ab6f24586ebeb0ffdd40}\label{classHeader_a2f87bdba0e99ab6f24586ebeb0ffdd40}} 
+\index{Header@{Header}!setLogoFile@{setLogoFile}}
+\index{setLogoFile@{setLogoFile}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{setLogoFile()}{setLogoFile()}}
+{\footnotesize\ttfamily void Header\+::set\+Logo\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+
+
+This method is used to set the logo file of the header. 
+
+This method sets L\+TC logo file shown at the top of the page. 
+\begin{DoxyParams}{Parameters}
+{\em file} & The file name of the logo image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeader_a445789c468b56a003e2ce0728591bd8e}\label{classHeader_a445789c468b56a003e2ce0728591bd8e}} 
+\index{Header@{Header}!setSloganFile@{setSloganFile}}
+\index{setSloganFile@{setSloganFile}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{setSloganFile()}{setSloganFile()}}
+{\footnotesize\ttfamily void Header\+::set\+Slogan\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+
+
+This method is used to set the slogan file of the header. 
+
+This method sets the slogan log file shown at the top of the page. 
+\begin{DoxyParams}{Parameters}
+{\em file} & The file name of the slogan image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeader_ab4b5a4500d0fdc3953e7b0ffa16b625d}\label{classHeader_ab4b5a4500d0fdc3953e7b0ffa16b625d}} 
+\index{Header@{Header}!setWeatherInfo@{setWeatherInfo}}
+\index{setWeatherInfo@{setWeatherInfo}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{setWeatherInfo()}{setWeatherInfo()}}
+{\footnotesize\ttfamily void Header\+::set\+Weather\+Info (\begin{DoxyParamCaption}\item[{Weather\+Data \&}]{info }\end{DoxyParamCaption})}
+
+
+
+This method is used to set the weather information of the header. 
+
+This method sets the weather information used to extract the weather information displayed in the header. 
+\begin{DoxyParams}{Parameters}
+{\em info} & The Weather\+Data object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHeader_ad304559fc3d8d6734ea5d0ad2e11349a}\label{classHeader_ad304559fc3d8d6734ea5d0ad2e11349a}} 
+\index{Header@{Header}!updateWeatherInfo@{updateWeatherInfo}}
+\index{updateWeatherInfo@{updateWeatherInfo}!Header@{Header}}
+\doxysubsubsection{\texorpdfstring{updateWeatherInfo()}{updateWeatherInfo()}}
+{\footnotesize\ttfamily void Header\+::update\+Weather\+Info (\begin{DoxyParamCaption}\item[{Weather\+Data \&}]{info }\end{DoxyParamCaption})}
+
+
+
+This method is used to update the weather information of the header. 
+
+This method is used by the App main page to update the weather information displayed in the header. The weather is updated every 3 minutes. 
+\begin{DoxyParams}{Parameters}
+{\em info} & The Weather\+Data object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Header_8h}{Header.\+h}}\item 
+\mbox{\hyperlink{Header_8cpp}{Header.\+cpp}}\end{DoxyCompactItemize}

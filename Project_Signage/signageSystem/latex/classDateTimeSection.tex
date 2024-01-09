@@ -1,0 +1,111 @@
+\hypertarget{classDateTimeSection}{}\doxysection{Date\+Time\+Section Class Reference}
+\label{classDateTimeSection}\index{DateTimeSection@{DateTimeSection}}
+
+
+This class is used to display the date and time on the signage.  
+
+
+
+
+{\ttfamily \#include $<$Date\+Time\+Section.\+h$>$}
+
+
+
+Inheritance diagram for Date\+Time\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classDateTimeSection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Date\+Time\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classDateTimeSection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDateTimeSection_a2d4bd5bcf385925153fb8448a3bb2bfa}{Date\+Time\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classDateTimeSection}{Date\+Time\+Section}} class. This class is used to display the date and time on the signage. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDateTimeSection_a9e358800fa57fc15e03ac6dd9b0f8783}{$\sim$\+Date\+Time\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classDateTimeSection}{Date\+Time\+Section}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDateTimeSection_a8ae3c27baf598f1738700a089df192a6}{update\+Time}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to update the time and date on the signage. \end{DoxyCompactList}\item 
+Wt\+::\+W\+Date\+Time $\ast$ \mbox{\hyperlink{classDateTimeSection_aa6ae73cfa649adfd42bd7fb747505ff6}{get\+Date\+Time}} () const
+\begin{DoxyCompactList}\small\item\em This method is used to get the date and time object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDateTimeSection_a542d13ce4e694efeffb55e09aaeb256f}\label{classDateTimeSection_a542d13ce4e694efeffb55e09aaeb256f}} 
+Wt\+::\+W\+Date\+Time $\ast$ {\bfseries date\+Time}
+\item 
+\mbox{\Hypertarget{classDateTimeSection_a9f2fdd1a757536d5e4c54df0897e19b9}\label{classDateTimeSection_a9f2fdd1a757536d5e4c54df0897e19b9}} 
+Wt\+::\+W\+Label $\ast$ {\bfseries date\+Label}
+\item 
+\mbox{\Hypertarget{classDateTimeSection_aa2d56d758bb9098ded209627a7d3e8a9}\label{classDateTimeSection_aa2d56d758bb9098ded209627a7d3e8a9}} 
+Wt\+::\+W\+Label $\ast$ {\bfseries time\+Label}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to display the date and time on the signage. 
+
+This class is used to create the section on the web page where the date and time are displayed. The time and date displayed are updated every 30 seconds. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDateTimeSection_a2d4bd5bcf385925153fb8448a3bb2bfa}\label{classDateTimeSection_a2d4bd5bcf385925153fb8448a3bb2bfa}} 
+\index{DateTimeSection@{DateTimeSection}!DateTimeSection@{DateTimeSection}}
+\index{DateTimeSection@{DateTimeSection}!DateTimeSection@{DateTimeSection}}
+\doxysubsubsection{\texorpdfstring{DateTimeSection()}{DateTimeSection()}}
+{\footnotesize\ttfamily Date\+Time\+Section\+::\+Date\+Time\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classDateTimeSection}{Date\+Time\+Section}} class. This class is used to display the date and time on the signage. 
+
+This constructor construct the section on the web page where the date and time are displayed. It is used to create the main container for this section and the row that will contain the date and time. \mbox{\Hypertarget{classDateTimeSection_a9e358800fa57fc15e03ac6dd9b0f8783}\label{classDateTimeSection_a9e358800fa57fc15e03ac6dd9b0f8783}} 
+\index{DateTimeSection@{DateTimeSection}!````~DateTimeSection@{$\sim$DateTimeSection}}
+\index{````~DateTimeSection@{$\sim$DateTimeSection}!DateTimeSection@{DateTimeSection}}
+\doxysubsubsection{\texorpdfstring{$\sim$DateTimeSection()}{~DateTimeSection()}}
+{\footnotesize\ttfamily Date\+Time\+Section\+::$\sim$\+Date\+Time\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classDateTimeSection}{Date\+Time\+Section}} class. 
+
+This destructor is used to delete the date and time object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDateTimeSection_aa6ae73cfa649adfd42bd7fb747505ff6}\label{classDateTimeSection_aa6ae73cfa649adfd42bd7fb747505ff6}} 
+\index{DateTimeSection@{DateTimeSection}!getDateTime@{getDateTime}}
+\index{getDateTime@{getDateTime}!DateTimeSection@{DateTimeSection}}
+\doxysubsubsection{\texorpdfstring{getDateTime()}{getDateTime()}}
+{\footnotesize\ttfamily Wt\+::\+W\+Date\+Time $\ast$ Date\+Time\+Section\+::get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+This method is used to get the date and time object. 
+
+This method is used to get the date and time object. This is used to propagate the same time and date object to the other sections. \mbox{\Hypertarget{classDateTimeSection_a8ae3c27baf598f1738700a089df192a6}\label{classDateTimeSection_a8ae3c27baf598f1738700a089df192a6}} 
+\index{DateTimeSection@{DateTimeSection}!updateTime@{updateTime}}
+\index{updateTime@{updateTime}!DateTimeSection@{DateTimeSection}}
+\doxysubsubsection{\texorpdfstring{updateTime()}{updateTime()}}
+{\footnotesize\ttfamily void Date\+Time\+Section\+::update\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This method is used to update the time and date on the signage. 
+
+This method is used to update the time and date on the signage every 30 seconds. It gets called by the App main class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DateTimeSection_8h}{Date\+Time\+Section.\+h}}\item 
+\mbox{\hyperlink{DateTimeSection_8cpp}{Date\+Time\+Section.\+cpp}}\end{DoxyCompactItemize}

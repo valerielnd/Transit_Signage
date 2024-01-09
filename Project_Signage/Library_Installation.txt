@@ -1,0 +1,77 @@
+This application needs the following libraries to run:
+------------------------------------------------------------------
+- Wt 4.9.1
+- libcurl 7.88
+- nlohmann/json.hpp
+- gumbo-parser
+- gumbo-query
+
+These following libraries were installed on a Ubuntu 22.04 with git enabled using the following steps:
+
+**libcurl 7.88***
+*****************
+- sudo apt-get update
+- wget https://curl.se/download/curl-7.88.1.zip
+- unzip curl-7.88.1.zip 
+- cd curl-7.88.1/
+- ./configure --with-openssl
+- sudo make
+- sudo make install
+- sudo ldconfig
+
+**Wt4.9.1**
+***********
+- sudo apt-get install gcc g++ libboost-all-dev cmake
+- sudo apt-get install doxygen libssl-dev libpq-dev libssl-dev libfcgi-dev
+- wget -c https://github.com/emweb/wt/archive/4.9.1.tar.gz
+- tar xvxf 4.9.1.tar.gz
+- cd wt-4.9.1/
+- mkdir build
+- cd build/
+- sudo cmake ..
+- sudo make
+- sudo make -C examples (optional)
+- sudo make install
+- sudo ldconfig
+
+**gumbo-parser**
+****************
+- git clone https://github.com/google/gumbo-parser.git
+- cd gumbo-parser/
+- sudo ./autogen.sh
+- sudo ./configure
+- sudo make
+- sudo make install
+- sudo ldconfig
+
+
+**gumbo-query**
+***************
+- gumbo-query
+- git clone https://github.com/lazytiger/gumbo-query.git
+- cd gumbo-query/build && sudo cmake .. && sudo make && sudo make test
+- sudo make install
+- sudo ldconfig
+- xport CPLUS_INCLUDE_PATH=:/usr/local/include/gq:$CPLUS_INCLUDE_PATH
+
+If after installing each library, if the library path is not added to the LD_LIBRARY_PATH environment, you can run the following code to install it:
+export LD_LIBRARY_PATH=/path/to/my/library:$LD_LIBRARY_PATH
+
+
+Files for the project stage 3
+------------------------------
+The files are added to the folder named "project_stage3". Inside there are 3 folders. Inside the folder signage system, there is a makefile that can be used to run the application.
+
+The AppView for two bus stops were created due to ressources issue: Natural science and Alumni Hall.
+
+To access the page for the bus stop natural science, please use the following link:
+
+- On the same computer : http://127.0.0.1:9091/natsci
+- On another computer : http://IP:9091/natsci
+
+To access for the Bus Stop Alumni Hall:
+
+- On the same computer: http://127.0.0.1:9091/alumhal1
+- On another computer: http://IP:9091/alumhal1
+
+We are also able to run the app on a computer with public IP if you want to access it another way. We will also be happy to do a demonstration if necessary.

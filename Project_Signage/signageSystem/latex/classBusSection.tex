@@ -1,0 +1,158 @@
+\hypertarget{classBusSection}{}\doxysection{Bus\+Section Class Reference}
+\label{classBusSection}\index{BusSection@{BusSection}}
+
+
+This class is used to display the bus schedule and bus map on the signage.  
+
+
+
+
+{\ttfamily \#include $<$Bus\+Section.\+h$>$}
+
+
+
+Inheritance diagram for Bus\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classBusSection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+Section\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classBusSection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusSection_a934ee33a75941b600017d0719ca3e461}{Bus\+Section}} (Bus\+Stop \&stop, Wt\+::\+W\+Date\+Time $\ast$date\+Time, std\+::map$<$ int, Service $>$ \&services, std\+::vector$<$ L\+T\+C\+Alert $>$ alerts)
+\begin{DoxyCompactList}\small\item\em Constructor for the class \mbox{\hyperlink{classBusSection}{Bus\+Section}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusSection_a7051db486ce0d7abb386e68571ec1d98}{$\sim$\+Bus\+Section}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the class \mbox{\hyperlink{classBusSection}{Bus\+Section}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}} $\ast$ \mbox{\hyperlink{classBusSection_add988b002f66374aca3eb737e60a9513}{get\+Bu\+Schudule\+Section}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to get the \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusSection_af355ad2e93cce27f149946cc95589eae}{set\+Date\+Time}} (Wt\+::\+W\+Date\+Time $\ast$date\+Time)
+\begin{DoxyCompactList}\small\item\em This function is used to set the date and time for the bus schedule. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusSection_a89f30cc92529fe28cbf834cedae42a6b}{set\+Bus\+Schedule\+Info}} (bool result)
+\begin{DoxyCompactList}\small\item\em This function is used to set the information label for the bus schedule. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBusSection_a4392718ec30aec19d78009b437b5dc96}{set\+Bus\+Shown\+Map}} ()
+\begin{DoxyCompactList}\small\item\em This function is used to set the bus shown on the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusSection_a9474c008373159d0db0c7a0ed5dc1c00}{set\+Stop\+Position}} (double lat, double longt)
+\begin{DoxyCompactList}\small\item\em This function is used to set the position of the bus stop on the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBusSection_a1c8a4f1530b7ac8516ff41d2ea6ef0bc}\label{classBusSection_a1c8a4f1530b7ac8516ff41d2ea6ef0bc}} 
+\mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}} $\ast$ {\bfseries bus\+Schedule\+Section}
+\item 
+\mbox{\Hypertarget{classBusSection_a30e1f168958f5bcea9800b07a76e2c83}\label{classBusSection_a30e1f168958f5bcea9800b07a76e2c83}} 
+\mbox{\hyperlink{classBusMapSection}{Bus\+Map\+Section}} $\ast$ {\bfseries bus\+Map\+Section}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to display the bus schedule and bus map on the signage. 
+
+This class is used to create the section on the web page where the bus schedule and bus map are displayed. The bus schedules are shown in rotation every 30 seconds and the positions of the bus in the shedule are shown on the map 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusSection_a934ee33a75941b600017d0719ca3e461}\label{classBusSection_a934ee33a75941b600017d0719ca3e461}} 
+\index{BusSection@{BusSection}!BusSection@{BusSection}}
+\index{BusSection@{BusSection}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{BusSection()}{BusSection()}}
+{\footnotesize\ttfamily Bus\+Section\+::\+Bus\+Section (\begin{DoxyParamCaption}\item[{Bus\+Stop \&}]{stop,  }\item[{Wt\+::\+W\+Date\+Time $\ast$}]{date\+Time,  }\item[{std\+::map$<$ int, Service $>$ \&}]{services,  }\item[{std\+::vector$<$ L\+T\+C\+Alert $>$}]{alerts }\end{DoxyParamCaption})}
+
+
+
+Constructor for the class \mbox{\hyperlink{classBusSection}{Bus\+Section}}. 
+
+This constructor is used toconstruct section on the web page where the bus schedule and bus map are displayed. 
+\begin{DoxyParams}{Parameters}
+{\em stop} & is the bus stop for which the bus schedule and bus map are displayed \\
+\hline
+{\em date\+Time} & is the curennt date and time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBusSection_a7051db486ce0d7abb386e68571ec1d98}\label{classBusSection_a7051db486ce0d7abb386e68571ec1d98}} 
+\index{BusSection@{BusSection}!````~BusSection@{$\sim$BusSection}}
+\index{````~BusSection@{$\sim$BusSection}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{$\sim$BusSection()}{~BusSection()}}
+{\footnotesize\ttfamily Bus\+Section\+::$\sim$\+Bus\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the class \mbox{\hyperlink{classBusSection}{Bus\+Section}}. 
+
+This destructor is used to destroy the \mbox{\hyperlink{classBusSection}{Bus\+Section}} object 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusSection_add988b002f66374aca3eb737e60a9513}\label{classBusSection_add988b002f66374aca3eb737e60a9513}} 
+\index{BusSection@{BusSection}!getBuSchuduleSection@{getBuSchuduleSection}}
+\index{getBuSchuduleSection@{getBuSchuduleSection}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{getBuSchuduleSection()}{getBuSchuduleSection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}} $\ast$ Bus\+Section\+::get\+Bu\+Schudule\+Section (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to get the \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}} object. 
+
+This function is used to get the \mbox{\hyperlink{classBusScheduleSection}{Bus\+Schedule\+Section}} object by the App main class to updated the bus schedule information \mbox{\Hypertarget{classBusSection_a89f30cc92529fe28cbf834cedae42a6b}\label{classBusSection_a89f30cc92529fe28cbf834cedae42a6b}} 
+\index{BusSection@{BusSection}!setBusScheduleInfo@{setBusScheduleInfo}}
+\index{setBusScheduleInfo@{setBusScheduleInfo}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{setBusScheduleInfo()}{setBusScheduleInfo()}}
+{\footnotesize\ttfamily void Bus\+Section\+::set\+Bus\+Schedule\+Info (\begin{DoxyParamCaption}\item[{bool}]{result }\end{DoxyParamCaption})}
+
+
+
+This function is used to set the information label for the bus schedule. 
+
+This function is used to set the information label for the bus schedule. This information is used to tell the user if the bus schedule is based on real-\/time information or L\+TC pre-\/planned schedule \mbox{\Hypertarget{classBusSection_a4392718ec30aec19d78009b437b5dc96}\label{classBusSection_a4392718ec30aec19d78009b437b5dc96}} 
+\index{BusSection@{BusSection}!setBusShownMap@{setBusShownMap}}
+\index{setBusShownMap@{setBusShownMap}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{setBusShownMap()}{setBusShownMap()}}
+{\footnotesize\ttfamily bool Bus\+Section\+::set\+Bus\+Shown\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is used to set the bus shown on the map. 
+
+This function is used to set the list of bus shown on the map base on which bus schedule are displayed. \mbox{\Hypertarget{classBusSection_af355ad2e93cce27f149946cc95589eae}\label{classBusSection_af355ad2e93cce27f149946cc95589eae}} 
+\index{BusSection@{BusSection}!setDateTime@{setDateTime}}
+\index{setDateTime@{setDateTime}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{setDateTime()}{setDateTime()}}
+{\footnotesize\ttfamily void Bus\+Section\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{Wt\+::\+W\+Date\+Time $\ast$}]{date\+Time }\end{DoxyParamCaption})}
+
+
+
+This function is used to set the date and time for the bus schedule. 
+
+This function is used to set the date and time for the bus schedule. This information is used to select the right stop time to display \mbox{\Hypertarget{classBusSection_a9474c008373159d0db0c7a0ed5dc1c00}\label{classBusSection_a9474c008373159d0db0c7a0ed5dc1c00}} 
+\index{BusSection@{BusSection}!setStopPosition@{setStopPosition}}
+\index{setStopPosition@{setStopPosition}!BusSection@{BusSection}}
+\doxysubsubsection{\texorpdfstring{setStopPosition()}{setStopPosition()}}
+{\footnotesize\ttfamily void Bus\+Section\+::set\+Stop\+Position (\begin{DoxyParamCaption}\item[{double}]{lat,  }\item[{double}]{longt }\end{DoxyParamCaption})}
+
+
+
+This function is used to set the position of the bus stop on the map. 
+
+This function is used to set the position of the bus stop on the map. 
+\begin{DoxyParams}{Parameters}
+{\em lat} & is the latitude of the bus position \\
+\hline
+{\em longt} & is the longitude of the bus position \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BusSection_8h}{Bus\+Section.\+h}}\item 
+\mbox{\hyperlink{BusSection_8cpp}{Bus\+Section.\+cpp}}\end{DoxyCompactItemize}
