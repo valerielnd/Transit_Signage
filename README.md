@@ -1,6 +1,6 @@
 # Transit_Signage
 
-<img src="Project_Images/TS.png" width=30%> A Digital Signage System Leveraging London [LTC Transit Data](https://www.londontransit.ca/open-data/)
+<img src="Project_Images/TS.png" width=15%> A Digital Signage System Leveraging London [LTC Transit Data](https://www.londontransit.ca/open-data/)
 
 ## Project Overview
 
